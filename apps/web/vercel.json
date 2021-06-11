@@ -1,0 +1,5 @@
+{
+  "name": "web",
+  "trailingSlash": false,
+  "cleanUrls": true
+}

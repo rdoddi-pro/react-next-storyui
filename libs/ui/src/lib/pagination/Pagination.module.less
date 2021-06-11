@@ -1,0 +1,49 @@
+.table-footer {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  .pagination-text {
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Circular-Std-Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #9292a3;
+    span {
+      font-family: 'Circular-Std-Medium';
+      font-weight: 500;
+      color: #3d3d46;
+    }
+  }
+  .tbl-pagination {
+    :global {
+      .ant-pagination-item {
+        height: 33px;
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+@media (min-width: 240px) and (max-width: 767px) {
+  .table-footer {
+    flex-direction: column-reverse;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 6px;
+  }
+  .pagination-text {
+    text-align: center;
+    padding-top: 19px;
+  }
+  .tbl-pagination {
+    display: flex;
+    justify-content: center;
+  }
+}
